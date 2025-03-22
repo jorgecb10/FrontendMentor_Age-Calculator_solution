@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../src/assets/fonts/Poppins-Bold.ttf')
+        format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-BoldItalic';
+    font-style: italic;
+    font-weight: bold;
+    src: url('../src/assets/fonts/Poppins-BoldItalic.ttf')
+        format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../src/assets/fonts/Poppins-ExtraBold.ttf')
+        format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-ExtraBoldItalic';
+    font-style: italic;
+    font-weight: 800;
+    src: url('../src/assets/fonts/Poppins-ExtraBoldItalic.ttf')
+        format('truetype');
+}
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../src/assets/fonts/Poppins-Regular.ttf')
+        format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-Italic';
+    font-style: italic;
+    font-weight: bold;
+    src: url('../src/assets/fonts/Poppins-Italic.ttf')
+        format('truetype');
+}
+
+@theme {
+    --font-poppins-bold: 'Poppins-Bold', 'sans-serif';
+    --font-poppins-bold-italic: 'Poppins-BoldItalic', 'sans-serif';
+    --font-poppins-extra-bold: 'Poppins-ExtraBold', 'sans-serif';
+    --font-poppins-extra-bold-italic: 'Poppins-ExtraBoldItalic', 'sans-serif';
+    --font-poppins-regular: 'Poppins', 'sans-serif';
+    --font-poppins-italic: 'Poppins-Italic', 'sans-serif';
+
+    --color-purple-hsl: hsl(259, 100%, 65%);
+    --color-light-red: hsl(0, 100%, 67%);
+    --color-off-white: hsl(0, 0%, 94%);
+    --color-light-grey: hsl(0, 0%, 86%);
+    --color-smokey-grey: hsl(0, 1%, 44%);
+    --color-off-black: hsl(0, 0%, 8%);
+}
+
+.contenedor {
+    max-width: 550px;
+    width: 90%;
+    margin: 0 auto;
+}

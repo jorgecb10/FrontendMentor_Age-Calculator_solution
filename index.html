@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="bg-off-white flex flex-col items-center justify-center min-h-dvh">
+  <main class="contenedor bg-white px-5 py-10 rounded-t-3xl rounded-bl-3xl rounded-br-[90px] shadow-md md:p-8">
+    <form id="form" novalidate class="grid grid-cols-3 gap-3  md:w-[80%]">
+      <div class="flex flex-col gap-2">
+        <label for="day" class="uppercase text-smokey-grey font-poppins-bold tracking-[3px] text-xs">Day</label>
+        <input type="text" name="day" id="day" class="outline-none border-2 border-light-grey p-2 rounded-md text-off-black focus:border-purple-hsl font-poppins-extra-bold hover:border-purple-hsl cursor-pointer transition-colors duration-150 text-xl" placeholder="DD">
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <label for="month" class="uppercase text-smokey-grey font-poppins-bold tracking-[3px] text-xs">Month</label>
+        <input type="text" name="month" id="month" class="outline-none border-2 border-light-grey p-2 rounded-md text-off-black focus:border-purple-hsl font-poppins-extra-bold hover:border-purple-hsl cursor-pointer transition-colors duration-150 text-xl" placeholder="MM">
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <label for="year" class="uppercase text-smokey-grey font-poppins-bold tracking-[3px] text-xs">Year</label>
+        <input type="text" name="year" id="year" class="outline-none border-2 border-light-grey p-2 rounded-md text-off-black focus:border-purple-hsl font-poppins-extra-bold hover:border-purple-hsl cursor-pointer transition-colors duration-150 text-xl" placeholder="YYYY"> 
+      </div>
+    </form>
+
+    <div class="relative border-t-2 border-light-grey my-16 md:my-10">
+      <a id="btn" class="cursor-pointer">
+        <img id="btn" src="src/assets/images/icon-arrow.svg" alt="icon-arrow" class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-purple-hsl rounded-full p-4 w-[60px] hover:bg-off-black transition-colors duration-200 md:left-auto md:right-0 md:translate-x-0">
+      </a>
+    </div>
+
+    <div class="font-poppins-extra-bold-italic text-5xl text-off-black md:text-6xl">
+      <p><span id="pYears" class="text-purple-hsl">--</span> years</p>
+      <p><span id="pMonths" class="text-purple-hsl">--</span> months</p>
+      <p><span id="pDays" class="text-purple-hsl">--</span> days</p>
+    </div>
+  </main>
+  
+  <footer class="contenedor absolute bottom-4">
+    <div class="text-center text-off-black font-poppins-bold">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-purple-hsl font-poppins-bold-italic">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/jorgecb10" class="text-purple-hsl font-poppins-bold-italic">Jorge Carranza</a>.
+    </div>
+  </footer>
+
+  <script src="src/js/app.js"></script>
+</body>
+</html>
